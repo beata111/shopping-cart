@@ -1,0 +1,14 @@
+<div class="overview pt10 pl5 pr5 text-white" ng-class="{'tile-active': active}">
+  <div class="overview-name">
+    {{offer.name}}
+  </div>
+  <div class="overview-price pt10">
+    <strong>
+      <span class="price">{{offer.price}}</span>
+      <span class="currency">€</span>
+    </strong>
+  </div>
+  <div ng-if="active">
+    <span class="glyphicon glyphicon-triangle-top"></span>
+  </div>
+</div>

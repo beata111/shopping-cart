@@ -1,0 +1,48 @@
+<table class="table table-stripped cart-table border-bottom">
+  <thead>
+    <th class="col-xs-6 col-md-4">
+      Artikel
+    </th>
+    <th class="only-large">
+      <div class="col-sm-4 plr0">
+        Details
+      </div>
+    </th>
+    <th class="col-xs-6 col-md-4">
+      <div class="row">
+        <div class="col-sm-5 plr0">
+          Anzahl
+        </div>
+        <div class="col-sm-7 plr0">
+          Price
+        </div>
+      </div>
+    </th>
+  <thead>
+  <tbody>
+    <tr ng-repeat="item in $ctrl.cartItems">
+      <td>
+        <product></product>
+      </td>
+      <td class="only-large">
+        <p class="cart-item-description-1 mb0">{{item.cartDescriptions[0]}}</p>
+        <p class="cart-item-description-2 mb0">{{item.cartDescriptions[1]}}</p>
+      </td>
+      <td>
+        <div>
+          <div class="row">
+            <div class="col-sm-5 plr0">
+              <quantity-input></quantity-input>
+            </div>
+            <div class="col-sm-6 plr0">
+              <price></price>
+            </div>
+            <div class="col-sm-1 plr0">
+              <remove-button></remove-button>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

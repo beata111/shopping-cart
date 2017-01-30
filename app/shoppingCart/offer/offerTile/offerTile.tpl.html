@@ -1,0 +1,64 @@
+<div class="offer-tile panel text-center position-relative">
+  <div class="topseller" ng-if="$ctrl.offer.topseller"></div>
+
+
+  <div class="offer-overview">
+    <div class="row">
+      <offer-tile-overview class="col-xs-6" offer="offers[0]" active="$ctrl.activeTile === 0"
+                           ng-click="$ctrl.switchOffer(0)"></offer-tile-overview>
+      <offer-tile-overview class="col-xs-6" offer="offers[1]" active="$ctrl.activeTile === 1"
+                           ng-click="$ctrl.switchOffer(1)"></offer-tile-overview>
+    </div>
+  </div>
+
+  <div class="offer-name pt10 text-orange">
+    {{$ctrl.offer.name}}
+  </div>
+
+  <div class="offer-photo">
+    <img class="image-contain" ng-src="{{$ctrl.offer.image}}"/>
+  </div>
+
+  <div class="offer-tile-components">
+    <div class="row">
+      <div class="col-xs-4 pr10 pl10 pb5" ng-repeat="component in $ctrl.offer.components">
+        {{component}}
+      </div>
+    </div>
+  </div>
+
+  <div class="offer-benefits">
+    <div class="offer-benefit pt5 pb5 plr0" ng-repeat="benefit in $ctrl.offer.benefits"
+         ng-class="{'text-white orange': benefit.focus}">
+      <div class="row">
+        <div class="offer-benefit-check text-right text-orange pr0 col-xs-2"
+             ng-class="{'text-white': benefit.focus}">
+          <span class="glyphicon glyphicon-ok"></span>
+        </div>
+        <div class="offer-benefit-name col-xs-10 text-left">
+          <span ng-if="!benefit.focus">{{benefit.name}}</span>
+          <strong ng-if="benefit.focus">{{benefit.name}}</strong>
+          <div class="offer-benefit-description" ng-if="benefit.description">
+            <span>{{benefit.description}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offer-details mt10">
+    <a href="">Mehr Details</a>
+  </div>
+
+  <div class="offer-price text-red">
+    <strong>nur
+      <span class="price">{{$ctrl.offer.price}}</span>
+      <span class="currency">€</span>
+      {{$ctrl.offer.pricePeriod}}
+    </strong>
+  </div>
+
+  <div class="offer-buy ml10 mr10 mb15">
+    <button class="btn btn-primary btn-lg" ng-click="addToCart()">Add to cart</button>
+  </div>
+</div>

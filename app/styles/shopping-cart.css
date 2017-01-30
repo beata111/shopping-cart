@@ -1,0 +1,272 @@
+@media (max-width: 992px){
+  .only-large{
+    display: none;
+  }
+}
+@media (min-width: 992px){
+  .not-large{
+    display: none;
+  }
+  .cart-item-name{
+    padding-top: 25px;
+  }
+}
+@media (min-width: 786px){
+  .only-mobile, .offer-overview, .quantity-input-mobile{
+    display: none;
+  }
+  .offer-tile{
+    border: 2px solid #ff8902;
+  }
+  .summary, .to-checkout{
+    float: right;
+  }
+  .summary-part{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 786px){
+  body{
+    font-size: 3em;
+  }
+  .not-mobile, .offer-name, .quantity-input-not-mobile{
+    display: none;
+  }
+  .coupon-input{
+    clear: both;
+    font-size: 1.3em;
+    height: 70px;
+  }
+  .coupon-btn{
+    font-size: 40px;
+  }
+  .remove-cart-item{
+    margin-top: 40px;
+  }
+}
+
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+button{
+  outline: none !important;
+}
+img{
+  user-select: none;
+}
+.position-relative{
+  position: relative;
+}
+.row{
+  margin: 0;
+}
+.mb0{
+  margin-bottom: 0;
+}
+.mt10{
+  margin-top: 10px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.mr10{
+  margin-right: 10px;
+}
+.mb15{
+  margin-bottom: 15px;
+}
+.plr0{
+  padding-left: 0;
+  padding-right: 0;
+}
+.pt0{
+  padding-top: 0;
+}
+.pr0{
+  padding-right: 0;
+}
+.pl5{
+  padding-left: 5px;
+}
+.pr5{
+  padding-right: 5px;
+}
+.pb5{
+  padding-bottom: 5px;
+}
+.pt5{
+  padding-top: 5px;
+}
+.pt10{
+  padding-top: 10px;
+}
+.pb10{
+  padding-bottom: 10px;
+}
+.pl15{
+  padding-left: 15px;
+}
+.pr15{
+  padding-right: 15px;
+}
+.pt30{
+  margin-top: 30px;
+}
+.clear{
+  clear: both;
+}
+.text-white{
+  color: white !important;
+}
+.text-grey{
+  color: grey;
+}
+.text-red{
+  color: #df0000;
+}
+.text-orange{
+  color: #ff8902;
+}
+.orange{
+  background-color: #ff8902 !important;
+}
+.border-top{
+  border-top: 1px solid #bcbcbc;
+}
+.border-bottom{
+  border-bottom: 1px solid #bcbcbc;
+}
+.wide-border-bottom{
+  border-bottom: 2px solid #9a9a9a;
+}
+.image-contain{
+  object-fit:contain;
+  width:100%;
+  height:100%;
+}
+
+
+/*//////// product tiles //////////*/
+
+.overview{
+  background-color: #5d77a4;
+  height: 175px;
+}
+.tile-active{
+  background-color: #2f53a4;
+}
+.overview-name{
+  font-size: 1.1em;
+}
+.overview-price{
+  font-size: 2em;
+}
+.offer-tile-components{
+  font-size: 0.95em;
+}
+.offer-benefits{
+  font-size: 1.05em;
+}
+.offer-benefit-check, .offer-benefit-name{
+  margin: 3px 0;
+}
+.offer-price .price, .offer-price .currency{
+  font-size: 3.5em;
+}
+.offer-buy button, .to-checkout button{
+  font-size: 1.5em;
+  height: 2.5em;
+  width: 100%
+}
+.topseller{
+  position: absolute;
+  background-size: cover;
+}
+.not-mobile .topseller{
+  top: -3px;
+  left: -3px;
+  height: 5em;
+  width: 5em;
+  background-image: url("../shoppingCart/images/topseller.JPG");
+}
+.only-mobile .topseller{
+  bottom: 7em;
+  right: 1.5em;
+  height: 4em;
+  width: 4em;
+  background-image: url("../shoppingCart/images/topsellerMobile.JPG");
+}
+
+/*//////// cart table //////////*/
+
+.cart-table td{
+  padding-top: 12px !important;
+  vertical-align: middle !important;
+}
+.cart-item-image{
+  height: 6em;
+}
+.cart-item-name{
+  font-size: 1.4em;
+}
+.cart-item-description-2{
+  color: #df0000;
+}
+.not-mobile .cart-input{
+  width: 60px;
+}
+.cart-item-price{
+  font-size: 1.7em;
+}
+.remove-cart-item{
+  height: 1.5em;
+  font-size: 1.5em;
+  padding: 0.1em 0.2em 0.2em 0.2em !important;
+}
+
+/*//////// cart table mobile //////////*/
+
+.mobile-product-description{
+  font-size: 0.75em;
+}
+.quantity-input-mobile div{
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+}
+.quantity-input-mobile button, .quantity-input-mobile input{
+  height: 100%;
+  width: 100%;
+}
+.quantity-input-mobile button{
+  font-size: 1.2em;
+}
+.quantity-input-mobile input{
+  font-size: 1.3em;
+  padding: 6px 5px 0.5em 5px;
+}
+
+/*//////// summary //////////*/
+
+.summary-total-price{
+  font-size: 1.5em;
+}
+.tax-text{
+  font-size: 0.9em;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+  opacity: 1;
+}
+
+.quantity-input-mobile input[type="number"]::-webkit-outer-spin-button,
+.quantity-input-mobile input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}

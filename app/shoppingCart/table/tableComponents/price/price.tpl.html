@@ -1,0 +1,5 @@
+<div class="cart-item-price">
+  {{item.price | number:2}}€/
+  <span ng-if="item.pricePeriod === 'im Monat'">mtl.</span>
+  <span ng-if="item.pricePeriod === 'einmalig'">ein.</span>
+</div>

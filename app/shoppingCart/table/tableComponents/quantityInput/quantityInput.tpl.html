@@ -1,0 +1,16 @@
+<div class="cart-input quantity-input-not-mobile">
+  <input type="number" class="form-control" min="0" ng-model="item.quantity" ng-change="$ctrl.checkQuantity(item)">
+</div>
+
+<div class="cart-input quantity-input-mobile">
+  <div class="btn-div">
+    <button class="btn btn-primary pt0" ng-click="$ctrl.removeOneFromCart(item)">-</button>
+  </div>
+  <div>
+    <input type="number" class="text-center form-control" ng-model="item.quantity" ng-change="$ctrl.checkQuantity(item)">
+  </div>
+  <div class="btn-div">
+    <button class="btn btn-primary pt0" ng-click="$ctrl.addToCart(item)">+</button>
+  </div>
+</div>
+

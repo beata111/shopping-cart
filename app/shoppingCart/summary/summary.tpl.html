@@ -1,0 +1,58 @@
+<div class="summary summary-part col-sm-6 col-md-4 col-md-offset-4">
+  <div class="row mt10 border-bottom">
+    <div class="col-xs-9 plr0">
+      <p class="text-grey">Einmalige Kosten<p>
+      <p class="text-grey">Monatliche Kosten</p>
+    </p>
+    </div>
+    <div class="col-xs-3 plr0 text-right">
+      <p class="text-grey">{{$ctrl.costs.direct | number:2}}€</p>
+      <p class="text-grey">{{$ctrl.costs.perMonth | number:2}}€</p>
+    </div>
+  </div>
+  <div class="row wide-border-bottom mt10">
+    <div class="col-xs-9 plr0">
+      <strong><p>Zwischensumme<p></strong>
+      <p class="text-grey">Versandkosten</p>
+      </p>
+    </div>
+    <div class="col-xs-3 plr0 text-right">
+      <strong><p>{{$ctrl.costs.direct + $ctrl.costs.perMonth | number:2}}€</p></strong>
+      <p class="text-grey">{{$ctrl.costs.delivery | number:2}}€</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-9 plr0 summary-total-price">
+      <p>Gesamtsumme<p>
+    </div>
+    <div class="col-xs-3 plr0 text-right">
+      <p class="summary-total-price">{{$ctrl.costs.direct + $ctrl.costs.perMonth + $ctrl.costs.delivery | number:2}}€</p>
+    </div>
+  </div>
+  <div class="row">
+    <p class="grey pull-right tax-text">inkl.MwSt(19%)</p>
+  </div>
+</div>
+
+
+<div class="summary-part col-sm-5 col-md-3">
+  <div class="input-group mt10">
+    <input type="text" class="coupon-input form-control" placeholder="Coupon-Code">
+    <span class="input-group-btn">
+      <button class="btn btn-default coupon-btn orange text-white" type="button">Einlösen</button>
+    </span>
+  </div>
+</div>
+
+
+<div class="row clear">
+  <div class="summary-part col-sm-6 col-md-4 pt30 to-checkout">
+    <button class="btn btn-primary">
+      Zur Kasse gehen >
+    </button>
+  </div>
+</div>
+
+
+
+

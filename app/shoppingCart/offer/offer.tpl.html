@@ -1,0 +1,19 @@
+<div class="not-mobile">
+  <div class="col-xs-6">
+    <div class="row">
+      <div class="col-xs-9 col-lg-6 pull-right plr0">
+        <offer-tile offers="$ctrl.offer" tile="0" active-offer="$ctrl.activeOffer" add-to-cart="$ctrl.addToCart($ctrl.offer[0])"></offer-tile>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="row">
+      <div class="col-xs-9 col-lg-6 plr0">
+        <offer-tile offers="$ctrl.offer" tile="1" active-offer="$ctrl.activeOffer" add-to-cart="$ctrl.addToCart($ctrl.offer[1])"></offer-tile>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="only-mobile">
+  <offer-tile offers="$ctrl.offer" active-offer="$ctrl.activeOffer" add-to-cart="$ctrl.addToCart($ctrl.activeOffer)"></offer-tile>
+</div>
